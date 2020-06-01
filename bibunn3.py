@@ -9,7 +9,7 @@ def model(x,t,a):
     dxdt = -a * x
     return dxdt
 
-x0 = 5
+x0 = 100
 
 t = np.linspace(0,100)
 
@@ -27,4 +27,6 @@ plt.plot(t,x3,'g:',linewidth = 2,label = 'a = 0.5')
 plt.xlabel('time')
 plt.ylabel('x(t)')
 plt.legend()
-plt.show()
+#plt.show()
+
+plt.savefig('bibunn.png')
