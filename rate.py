@@ -1,7 +1,6 @@
 from scipy.integrate import solve_ivp
 import numpy as np
 import matplotlib.pyplot as plt
-import math
 
 def rate(t,v,k1,k2,k3):
 	 w, x, y, z = v
@@ -25,6 +24,6 @@ plt.legend(['w','x','y','z'],shadow = True)
 plt.title('System')
 plt.xscale('log')
 #plt.yscale('log')
-plt.xlim([10e12,10e16])
+#plt.xlim([10e12,10e16])
 #plt.ylim([0,1])
 plt.show()
